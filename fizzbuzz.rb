@@ -3,8 +3,6 @@ for i in 1...100 do
   if i%3 != 0 && i%5 != 0
     puts i
   else
-    first = i%3 == 0 ? "Fizz" : ""
-    second = i%5 == 0 ? "Buzz" : ""
-    puts first + second
+    puts "#{i%3 == 0 ? "Fizz" : ""}" + "#{i%5 == 0 ? "Buzz" : ""}"
   end
 end
